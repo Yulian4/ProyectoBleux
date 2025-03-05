@@ -1,0 +1,496 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11vw;
+    background-color: rgb(31, 23, 47);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-download {
+    background: linear-gradient(to right, rgb(128, 64, 210), rgb(5, 128, 221));
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.container-two {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(46, 37, 80);
+    color: white;
+    position: relative;
+}
+
+.container-two::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('./assets/images/hojasFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+
+.container-two-item {
+    padding: 0 8vw;
+    max-width: 50%;
+}
+
+.container-two h1 {
+    font-size: 5rem;
+    margin: 0 0 6vh 0;
+}
+
+.container-two-img {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0 0 0 15vw;
+}
+
+.container-two-img img {
+    height: 65vh;
+
+}
+
+.container-two-button {
+    margin: 6vh 0 0 0;
+    border: solid 2px rgb(207, 207, 207, 0.486);
+    border-radius: 5px;
+    padding: 9px;
+    width: 240px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: rgb(232, 55, 145);
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.features {
+    padding: 2vh 3vw 8vh;
+    background-color: rgb(241, 242, 247);
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 3rem;
+    color: rgb(232, 55, 145);
+}
+
+.feature-image {
+    margin: 0 5vw;
+}
+
+.feature-image img {
+    height: 40vh;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature-text {
+    text-align: start;
+    width: 25vw;
+}
+
+ul {
+    list-style: none;
+}
+
+.feature-text h3 {
+    color: rgb(232, 55, 145);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#text {
+    color: rgb(232, 55, 145);
+}
+
+ul i {
+    color: rgb(232, 55, 145);
+}
+
+.pricing {
+    padding: 0.1vh 13.8vw;
+    background-color: rgb(31, 23, 47);
+    color: white;
+    text-align: center;
+    padding: 0.2vh 0 5vh;
+}
+
+.pricing i {
+    margin-right: 2.2vw;
+}
+
+.pricing ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pricing h2 {
+    font-size: 3rem;
+}
+
+.pricing p {
+    margin: 5vh;
+}
+
+.pricing-container-one {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.price {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 7vh;
+    padding: 0;
+}
+
+.price span {
+    font-size: 2rem;
+}
+
+#text-price {
+    padding: 1vh 1vw 2vh;
+}
+
+.price small {
+    font-size: 1rem;
+    vertical-align: top;
+    color: rgb(127, 127, 127);
+}
+
+.item-one,
+.item-two,
+.item-three {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.item-one p,
+.item-two p,
+.item-three p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-subscribe {
+    background-color: rgb(46, 38, 79);
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0.6vh 0vw 1vh;
+    width: 9vw;
+    height: 5vh;
+}
+
+#bottom-one {
+    background: linear-gradient(to right, rgb(230, 101, 168), rgb(232, 55, 145))
+}
+
+.fondo-bottom {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+.item-one ul,
+.item-two ul,
+.item-three ul {
+    text-align: start;
+    margin: 5vh 0 5vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 8vw;
+}
+
+footer img {
+    width: 15vw;
+}
+
+footer a {
+    color: rgb(232, 55, 145);
+    text-decoration: none;
+}
+
+@media (max-width:1120px) {
+    .container-two-img {
+        padding: 0 0 0 12vw;
+    }
+
+    .container-two-item {
+        padding: 0;
+    }
+
+    .btn-subscribe {
+        width: 15vw;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+
+    .feature-text ul {
+        padding: 0;
+    }
+}
+
+@media (max-width:920px) {
+    .pricing-container-one {
+        flex-wrap: wrap;
+        padding: 2vh 6vw;
+    }
+
+    .feature-container {
+        gap: 0;
+    }
+
+    .feature-image img {
+        height: 30vh;
+    }
+
+    .feature-text ul {
+        padding: 0;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+
+    .item-one ul,
+    .item-two ul,
+    .item-three ul {
+        margin: 3vh 0 3vh;
+    }
+
+    .price {
+        height: 5vh;
+    }
+
+    .item-one h3,
+    .item-two h3,
+    .item-three h3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-two h1 {
+        font-size: 3rem;
+        margin-bottom: 5vh;
+    }
+
+    .container-two {
+        padding: 2vh;
+    }
+
+    header {
+        padding: 10px 2vw;
+
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .container-two-img img {
+        height: 36vh;
+    }
+
+    .container-two-button {
+        margin-top: 3vh;
+    }
+
+    .feature-image img {
+        height: 20vh;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .btn-download {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .feature-text {
+        width: 73%;
+
+    }
+
+    .features h2,
+    .pricing h2 {
+        font-size: 2.7rem;
+    }
+
+    .btn-primary {
+        margin-bottom: 2vh;
+    }
+
+    p,
+    .price small,
+    li {
+        font-size: 0.9rem;
+    }
+
+    .price span {
+        font-size: 1.7rem;
+    }
+
+    .btn-subscribe {
+        width: 18vw;
+        height: 4vh;
+    }
+
+    .container-two-button {
+        border: none;
+        width: auto;
+    }
+
+}
+
+@media(max-width: 602px) {
+    .btn-subscribe {
+        width: 26vw;
+        height: 4vh;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .container-two-img img {
+        height: 28vh;
+    }
+
+    .container-two h1 {
+        font-size: 2rem;
+        margin-bottom: 4vh;
+        margin-top: 3vh;
+    }
+
+    .features h2,
+    .pricing h2 {
+        font-size: 1.7rem;
+    }
+
+    p,
+    .price small,
+    li {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        padding: 5px 10px;
+        margin-bottom: 2vh;
+    }
+
+    .btn-secondary {
+        padding: 5px 10px;
+    }
+
+    .feature-text h3,
+    .item-one h3,
+    .item-two h3,
+    .item-three h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-two-item p {
+        padding: 0.7vh;
+    }
+
+    .container-two-button {
+        margin-top: 2vh;
+    }
+    .btn-subscribe {
+        width: 29vw;
+        height: 3.7vh;
+    }
+    #text-price {
+        padding: 1vh 7vw 2vh;
+    }
+    .social-icons img{
+        width: 25vw;
+    }
+    
+    
+}
