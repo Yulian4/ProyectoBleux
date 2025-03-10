@@ -510,11 +510,15 @@ footer a {
     }
 
     .btn-primary {
-        padding: 5px 10px;
-        margin-bottom: 2vh;
+       width: 29vw;
+       height: 3.7vh;
+       padding: 5px 10px;
+       margin-bottom: 2vh;
     }
 
     .btn-secondary {
+        width: 29vw;
+        height: 3.7vh;
         padding: 5px 10px;
     }
 
@@ -526,7 +530,7 @@ footer a {
     }
 
     .container-two-item p {
-        padding: 0.7vh;
+        padding: 0.7vh 15vw;
     }
 
     .container-two-button {
@@ -544,6 +548,22 @@ footer a {
 
     .social-icons img {
         width: 25vw;
+    }
+    .container-two::after {
+        background-image: none;
+    }
+
+    .container-two-img {
+        display: none;
+    }
+
+    .container-two-item {
+        max-width: 100%
+    }
+
+    .container-two {
+        align-items: center;
+        text-align: center;
     }
 
 
